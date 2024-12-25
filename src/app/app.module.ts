@@ -31,9 +31,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { NgChartsModule } from 'ng2-charts';
+
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+
+import { ToolsFormComponent } from './tools-form/tools-form.component';
+import { ArticlesFormComponent } from './articles-form/articles-form.component';
+
 
 
 @NgModule({
@@ -49,9 +54,8 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     ModalComponent,
     ConfirmComponent,
-    HomeComponent,
-    FooterComponent,
-    HeaderComponent
+    ToolsFormComponent,
+    ArticlesFormComponent
 
   ],
   imports: [

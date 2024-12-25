@@ -3,7 +3,12 @@ import { evt } from 'src/model/evt';
 import { EvenementService } from 'src/service/evenement.service';
 import { ModalComponent } from '../modal/modal.component';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+<<<<<<< HEAD
 
+=======
+import { DialogRef } from '@angular/cdk/dialog';
+import { ConfirmComponent } from '../confirm/confirm.component';
+>>>>>>> cf79ba4429827bc5a7632f1819c255121740e848
 
 
 @Component({
@@ -16,7 +21,7 @@ export class EventsComponent implements OnInit {
 data : evt[]=[]
 constructor( private es: EvenementService, private Dialog:MatDialog){}
 
-displayedColumns: string[] = ['id', 'title', 'dateDebut', 'dateFin','Lieu','edit'];
+displayedColumns: string[] = ['id', 'title', 'dateDebut', 'dateFin','Lieu','delete','edit'];
   ngOnInit(): void {
     this.es.getAllevents().subscribe((response)=>{
 
@@ -24,6 +29,33 @@ displayedColumns: string[] = ['id', 'title', 'dateDebut', 'dateFin','Lieu','edit
     }) 
 
 
+  }
+  delete(id:string):void{
+    console.log(id);
+  
+    //1 lancer la boite (confirm component )
+    //no93od nestana f thred mahloul o nestana f reponse
+     const dialogRef =this.Dialog.open(ConfirmComponent);
+    // attendre l resultat de l'utilisateur 
+  dialogRef.afterClosed().subscribe((response)=>
+  {
+    if (response){
+      this.es.delete(id).subscribe(()=>{
+        //hna naml action eli ena nheb nchoufha f front bad matsir 
+        // nawd nebath requette get bch yjiwni 
+        this.es.getAllevents().subscribe((response)=>{
+    
+          this.data=response
+        }) 
+      });
+    }
+  })
+    
+  
+  
+  
+  
+  
   }
   open():void{
     let dialogRef = this.Dialog.open(ModalComponent, {
