@@ -1,0 +1,59 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="nav-item">A propos du Labo</a>
+        <a href="#" class="nav-item">Membres</a>
+        <a href="#" class="nav-item">Evénements</a>
+        <a href="#" class="nav-item">Publications</a>
+        <a href="#" class="nav-item">Maps</a>
+      </div>
+      <div class="nav-center">
+        <input type="text" placeholder="Rechercher..." class="search-bar">
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-item">Se Connecter</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+.header {
+  background-color: #023047;
+  color: white;
+  padding: 10px 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.search-bar {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+</style>

@@ -1,3 +1,5 @@
 <router-outlet></router-outlet>
-<app-template>  
-</app-template> 
+<app-template *ngIf="!isLoginPage()"></app-template>
+<app-home *ngIf="isLoginPage()"></app-home>
+
+

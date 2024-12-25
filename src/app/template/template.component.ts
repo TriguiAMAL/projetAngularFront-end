@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/service/AuthService';
 
@@ -8,11 +8,12 @@ import { AuthService } from 'src/service/AuthService';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent {
-  showNavBar = false ;
+
   constructor(private as:AuthService, private router:Router){}
 
-  
-  
+ 
+
+
 
   logout():void{
     //injection de dependance 

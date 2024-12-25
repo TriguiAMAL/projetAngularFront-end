@@ -31,6 +31,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { NgChartsModule } from 'ng2-charts';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -45,7 +48,10 @@ import { NgChartsModule } from 'ng2-charts';
     EventsComponent,
     LoginComponent,
     ModalComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent
 
   ],
   imports: [

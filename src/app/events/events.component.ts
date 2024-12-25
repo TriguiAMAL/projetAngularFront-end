@@ -3,7 +3,7 @@ import { evt } from 'src/model/evt';
 import { EvenementService } from 'src/service/evenement.service';
 import { ModalComponent } from '../modal/modal.component';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogRef } from '@angular/cdk/dialog';
+
 
 
 @Component({

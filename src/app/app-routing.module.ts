@@ -7,38 +7,42 @@ import { EventsComponent } from './events/events.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { LoginComponent } from './login/login.component';
-import { ModalComponent } from './modal/modal.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-
+  {
+    path:'home',
+    
+    component:HomeComponent
+  },
   {
     path:'dashboard',
-    pathMatch:"full",
+   
     component:DashboardComponent
   },
   {
     path:'member',
-    pathMatch:"full",
+    
     component:MemberComponent
   },
   {
     path:'events',
-    pathMatch:"full",
+    
     component:EventsComponent
   },
   {
     path:'tools',
-    pathMatch:"full",
+   
     component:ToolsComponent
   },
   {
     path:'articles',
-    pathMatch:"full",
+   
     component:ArticlesComponent
   },
   {
     path:'create',
-    pathMatch:"full",
+    
     component:MemberFormComponent
   },
 

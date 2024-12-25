@@ -1,20 +1,12 @@
 {
   "members": [
     {
-      "id": "a508",
       "cin": "11138762",
       "name": "amal",
-      "cv": "12122",
-      "type": "student",
-      "createdDate": "2024-09-30T15:05:05.872Z"
-    },
-    {
-      "id": "ba91",
-      "cin": "14141414",
-      "name": "amal",
-      "cv": "ay",
+      "cv": "",
       "type": "teacher",
-      "createdDate": "2024-10-16T09:49:23.761Z"
+      "createdDate": "2024-11-16T09:41:20.950Z",
+      "id": "f8ee"
     }
   ],
   "evt": [
@@ -47,6 +39,16 @@
     },
     {
       "id": "607e"
+    },
+    {
+      "title": null,
+      "dateDebut": null,
+      "dateFin": null,
+      "lieu": null,
+      "id": "9819"
+    },
+    {
+      "id": "af92"
     }
   ]
 }
